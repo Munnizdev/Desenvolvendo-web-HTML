@@ -1,113 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Projeto Portfólio">
-		<meta name="author" content="Generation Brasil">
-		<meta name="keywords" content="HTML, CSS, JavaScript">
-		<title>Meu Perfil</title>
-		<style>
-			#about #conteudo {
-				display: flex;
-				align-items: center;
-				gap: 30px;
-			}
-			#about img {
-				width: 200px;
-				height: auto;
-			}
-		</style>
-	</head>
-	<body>
-		<!-- Cabeçalho da Página (header) -->
-		<header>
-			<!-- Div Conteudo do Cabeçalho -->
-			<div id="header_content">
-				<!-- Titulo do Cabeçalho -->
-				<div id="titulo">
-					<!-- Seu nome -->
-					<h1>Munnizdev</h1>
-				</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projeto Portfólio" />
+  <meta name="author" content="Generation Brasil" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet" />
+  <title>Meu Perfil</title>
+</head>
+<body>
+  <header>
+    <div id="header_content" class="flex">
+      <div id="titulo">
+        <h1>Munnidev</h1>
+      </div>
+      <div id="menu">
+        <nav>
+          <ul id="menu">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="portfolio.html"> Portfólio </a></li>
+            <li><a href="contato.html"> Contato </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-				<!-- Conteudo do Menu da Página (header) -->
-				<div id="menu">
-					<!-- Menu da Página -->
-					<nav>
-						<!-- Marcadores não ordenados + links -->
-						<ul id="menu">
-							<li>
-								<a href="index.html"> Home </a>
-							</li>
-							<li>
-								<a href="contato.html"> Contato </a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
+  <main>
+    <section id="about">
+      <h2>Sobre mim:</h2>
+      <div id="conteudo" class="flex">
+        <img src="./assets/img/foto perfil 2.png" alt="Foto do criador desse conteudo" class="img_profile" />
+        <article id="sobre_texto">
+          <p>
+           <h1>Oiiee</h1>
+<p>Prazer, Muniz!<br>
+Sou desenvolvedora full stack, formada em Análise e Desenvolvimento de Sistemas e pós-graduada em Cibersegurança. Apaixonada por criar soluções funcionais e seguras.</p>
 
-		<!-- Seção Principal da Página (main) -->
-		<main>
+<p>No MunnizDev, compartilho minha jornada, projetos, tutoriais e dicas sobre desenvolvimento web e segurança digital, mostrando como a tecnologia pode transformar e proteger vidas.</p>
 
-			<!-- Seção Sobre você -->
-			<section id="about">
+<p>Seja bem-vindo(a) ao meu espaço!</p>
 
-				<!-- Título da Seção -->
-				<h2>Sobre a Munnizdev:</h2>
 
-				<!-- Conteúdo da Seção -->
-				<div id="conteudo">
+          <div class="btn_portfolio">
+            <a href="portfolio.html"> Ver Portfólio</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-					<!-- Imagem do criador do conteúdo -->
-					<img
-						src="./assets/img/foto perfil 2.png"
-						alt="Foto do criador desse conteudo"
-					/>
+    <section id="video" class="flex_start">
+      <h2>Meu vídeo favorito:</h2>
+      <div class="youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g4QIw0S5uHo?si=pJCwvf5hUToaLbXC" title="YouTube video player"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
 
-					<!-- Texto sobre o criador do conteúdo -->
-					<article id="sobre_texto">
-						<p>
-							Vivemos imersos em tecnologia, mas raramente questionamos seu impacto. Programar sem pensar é como automatizar a própria ignorância, veloz, produtivo e perigosamente inconsciente.
-						</p>
-					</article>
-				</div>
-			</section>
-
-			<!-- Seção contendo um vídeo de sua preferência -->
-			<section id="video">
-				
-				<!-- Título da Seção -->
-				<h2>Meu vídeo favorito:</h2>
-
-				<!-- Vídeo da Seção -->
-				<div class="youtube">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/g4QIw0S5uHo?si=pJCwvf5hUToaLbXC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-
-			</section>
-
-		</main>
-
-		<!-- Rodapé da Página (footer) -->
-		<footer>
-			<!-- Seção de Contato - Redes Sociais-->
-			<section id="redes_sociais">
-				<a href="https://www.linkedin.com/in/andressa-muniz-2a7714146/">
-					<img src="assets/img/linkedin.svg" alt="LinkedIn" />
-				</a>
-				<a href="https://github.com/Munnizdev">
-					<img src="assets/img/github.svg" alt="Github" />
-				</a>
-				<a href="https://www.instagram.com/munnizdev?igsh=MWhwODhpMzhsNjJheQ==">
-					<img src="assets/img/instagram.svg" alt="Instagram" />
-				</a>
-			</section>
-
-			<h3>
-				Feito por Andressa Muniz - 2025
-			</h3>
-		</footer>
-	</body>
+  <footer class="flex">
+    <section id="redes_sociais">
+      <a href="https://www.linkedin.com/in/andressa-muniz-2a7714146/"><img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon" /></a>
+      <a href="https://github.com/Munnizdev"><img src="assets/img/github.svg" alt="Github" class="social_icon" /></a>
+      <a href="https://www.instagram.com/munnizdev?igsh=MWhwODhpMzhsNjJheQ=="><img src="assets/img/instagram.svg" alt="Instagram" class="social_icon" /></a>
+    </section>
+    <h3>Feito por Andressa Muniz - 2025</h3>
+  </footer>
+</body>
 </html>
